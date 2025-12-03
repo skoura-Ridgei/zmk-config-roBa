@@ -106,15 +106,19 @@ behaviors {
 macros {};
 
 behaviors {};
+
+macros {};
+
+behaviors {};
 keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R      &kp T                                                      &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A           &kp S         &kp D         &kp F      &kp G      &kp LS(LG(S))                      &kp HASH     &kp H      &kp J  &kp K      &kp L    &kp BACKSPACE
-&kp Z           &kp X         &kp C         &kp V      &kp B      &kp C_MENU                         &kp MINUS    &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &lt 2 RCTRL  &kp ENTER                             &kp INT_MUHENKAN
+&kp Q           &kp W         &kp E         &kp R      &kp T                                      &kp Y          &kp U  &kp I      &kp O    &kp P
+&kp A           &kp S         &kp D         &kp F      &kp G      &kp LS(LG(S))      &kp HASH     &kp H          &kp J  &kp K      &kp L    &kp ENTER
+&kp Z           &kp X         &kp C         &kp V      &kp B      &kp C_MENU         &kp MINUS    &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &lt 3 C_MENU       &lt 2 RCTRL  &kp BACKSPACE                             &kp INT_MUHENKAN
 >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
