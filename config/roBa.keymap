@@ -15,16 +15,17 @@
     scroll-layers = <5>;
 
     arrows {
-         layers = <3>;
-         bindings =
-             <&kp RIGHT_ARROW>,
-             <&kp LEFT_ARROW>,
-             <&kp UP_ARROW>,
-             <&kp DOWN_ARROW>;
-         tick = <10>;
-         wait-ms = <5>;
-         tap-ms = <5>;
-     };
+        layers = <3>;
+        bindings =
+            <&kp RIGHT_ARROW>,
+            <&kp LEFT_ARROW>,
+            <&kp UP_ARROW>,
+            <&kp DOWN_ARROW>;
+
+        tick = <10>;
+        wait-ms = <5>;
+        tap-ms = <5>;
+    };
 };
 
 / {
@@ -33,12 +34,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <1 0>;
         };
 
         muhennkann {
             bindings = <&kp LANG_ZENKAKUHANKAKU>;
-            key-positions = <1 0>;
+            key-positions = <11 10>;
         };
 
         left {
@@ -68,12 +69,12 @@
 
         pg_up {
             bindings = <&kp PAGE_UP>;
-            key-positions = <17 18>;
+            key-positions = <6 5>;
         };
 
         pg_dn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <21 20>;
+            key-positions = <18 17>;
         };
     };
 
@@ -114,7 +115,7 @@
 &kp Q      &kp W         &kp E         &kp R      &kp T                                    &kp Y          &kp U  &kp I      &kp O    &lt 3 P
 &kp A      &kp S         &kp D         &kp F      &kp G      &kp LS(LG(S))      &kp HASH   &kp H          &kp J  &kp K      &kp L    &kp ENTER
 &kp Z      &kp X         &kp C         &kp V      &kp B      &kp COLON          &kp MINUS  &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &lt 1 K_MENU       &to 2      &kp BACKSPACE                             &kp DEL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &lt 1 LS(F10)      &to 2      &kp BACKSPACE                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -124,7 +125,7 @@
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp DOLLAR         &kp PERCENT  &kp AMPERSAND                      &kp SQT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LCTRL  &kp PIPE
 &kp AT_SIGN      &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp PLUS     &kp ASTERISK   &trans      &none   &kp EQUAL  &none                 &none                  &none      &none
-&trans           &trans             &trans             &trans       &trans         &trans      &trans  &trans     &trans                &trans                 &trans     &none
+&trans           &trans             &trans             &trans       &kp LC(LS(B))  &trans      &trans  &trans     &trans                &trans                 &trans     &none
 &trans           &trans             &trans             &trans       &trans         &trans      &trans  &trans                                                             &none
             >;
 
@@ -155,10 +156,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                              &trans         &kp LS(UP_ARROW)    &kp LC(C)  &kp LC(V)  &none
-&trans  &trans  &trans  &trans  &trans          &trans      &trans  &trans         &mkp LCLK           &mkp MCLK  &mkp RCLK  &kp LC(ENTER)
-&trans  &trans  &trans  &trans  &trans          &trans      &trans  &trans         &kp LS(DOWN_ARROW)  &kp DOWN   &kp RIGHT  &none
-&trans  &trans  &trans  &trans  &kp LEFT_SHIFT  &trans      &trans  &kp BACKSPACE                                            &kp DELETE
+&trans  &trans  &trans  &trans  &trans                      &trans         &kp LS(UP_ARROW)    &kp LC(C)  &kp LC(V)  &none
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &mkp LCLK           &mkp MCLK  &mkp RCLK  &kp LC(ENTER)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &kp LS(DOWN_ARROW)  &none      &none      &none
+&trans  &trans  &trans  &trans  &none   &trans      &trans  &kp BACKSPACE                                            &kp DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
