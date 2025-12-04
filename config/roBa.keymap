@@ -118,8 +118,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &lt 1 LS(F10)         &to 2      &kp BACKSPACE                             &kp DEL
             >;
 
-            // sensor-bindings = <&encoder_msc_down_up>;
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DOWN>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
