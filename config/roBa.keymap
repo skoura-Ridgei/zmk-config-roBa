@@ -39,7 +39,7 @@
 
         muhennkann {
             bindings = <&kp LANG_ZENKAKUHANKAKU>;
-            key-positions = <11 10>;
+            key-positions = <2 1 0>;
         };
 
         left {
@@ -49,32 +49,32 @@
 
         right {
             bindings = <&kp RIGHT_ARROW>;
-            key-positions = <19 20>;
+            key-positions = <20 21>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1 2>;
+            key-positions = <0 1 2 3>;
         };
 
         up {
             bindings = <&kp UP_ARROW>;
-            key-positions = <6 7>;
+            key-positions = <20 19>;
         };
 
         down {
             bindings = <&kp DOWN_ARROW>;
-            key-positions = <30 31>;
+            key-positions = <31 32>;
         };
 
         pg_up {
             bindings = <&kp PAGE_UP>;
-            key-positions = <6 5>;
+            key-positions = <31 30>;
         };
 
         pg_dn {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <18 17>;
+            key-positions = <32 33>;
         };
     };
 
@@ -112,10 +112,10 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R      &kp T                                    &kp Y          &kp U  &kp I      &kp O    &lt 3 P
-&kp A      &kp S         &kp D         &kp F      &kp G      &kp LS(LG(S))      &kp HASH   &kp H          &kp J  &kp K      &kp L    &kp ENTER
-&kp Z      &kp X         &kp C         &kp V      &kp B      &kp COLON          &kp MINUS  &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &lt 1 LS(F10)      &to 2      &kp BACKSPACE                             &kp DEL
+&kp Q      &kp W         &kp E         &kp R      &kp T                                       &kp Y          &kp U  &kp I      &kp O    &lt 3 P
+&kp A      &kp S         &kp D         &kp F      &kp G      &kp LS(LG(S))         &kp HASH   &kp H          &kp J  &kp K      &kp L    &kp ENTER
+&kp Z      &kp X         &kp C         &kp V      &kp B      &kp INT_MUHENKAN      &kp MINUS  &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LCTRL  &kp SPACE  &lt 1 LS(F10)         &to 2      &kp BACKSPACE                             &kp DEL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -157,7 +157,7 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans         &kp LS(UP_ARROW)    &kp LC(C)  &kp LC(V)  &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &mkp LCLK           &mkp MCLK  &mkp RCLK  &kp LC(ENTER)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &mkp MB1            &mkp MB3   &mkp MB2   &kp LC(ENTER)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &kp LS(DOWN_ARROW)  &none      &none      &none
 &trans  &trans  &trans  &trans  &none   &trans      &trans  &kp BACKSPACE                                            &kp DELETE
             >;
