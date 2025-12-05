@@ -76,6 +76,16 @@
             bindings = <&kp PAGE_DOWN>;
             key-positions = <31 32>;
         };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <7 8>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <8 9>;
+        };
     };
 
     macros {
@@ -156,10 +166,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans         &kp LS(UP_ARROW)    &kp LC(C)  &kp LC(V)  &mo 5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &mkp MB1            &mkp MB3   &mkp MB2   &kp LC(ENTER)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &kp LS(DOWN_ARROW)  &none      &none      &none
-&trans  &trans  &trans  &trans  &none   &trans      &trans  &kp BACKSPACE                                            &kp DELETE
+&trans  &trans  &trans  &trans  &trans                      &trans         &kp LS(UP_ARROW)    &none     &none     &mo 5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &mkp MB1            &mkp MB3  &mkp MB2  &kp LC(ENTER)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &kp LS(DOWN_ARROW)  &none     &none     &none
+&trans  &trans  &trans  &trans  &none   &trans      &trans  &kp BACKSPACE                                          &kp DELETE
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
