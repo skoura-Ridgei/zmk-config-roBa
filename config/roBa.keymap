@@ -123,7 +123,7 @@
 
         FUNCTION {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp DOLLAR         &kp PERCENT  &kp AMPERSAND                      &kp SQT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LCTRL  &kp PIPE
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp DOLLAR         &kp PERCENT  &kp AMPERSAND                      &kp SQT    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LCTRL  &lt 5 PIPE
 &kp AT_SIGN      &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp PLUS     &kp ASTERISK   &trans      &none   &kp EQUAL  &none                 &none                  &none      &none
 &trans           &trans             &trans             &trans       &kp LC(LS(B))  &trans      &trans  &trans     &trans                &trans                 &trans     &none
 &trans           &trans             &trans             &trans       &trans         &trans      &trans  &trans                                                             &none
@@ -134,7 +134,7 @@
 
         NUM {
             bindings = <
-&none   &kp F2   &none   &kp F5   &none                          &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none
+&none   &kp F2   &none   &kp F5   &none                          &kp ASTERISK   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &mo 5
 &none   &kp F12  &kp F9  &kp F10  &none   &none       &kp PLUS   &kp SLASH      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ENTER
 &none   &kp F6   &kp F7  &kp F9   &none   &none       &kp MINUS  &kp NUMBER_0   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none
 &trans  &trans   &trans  &trans   &trans  &trans      &trans     &kp BACKSPACE                                            &kp DELETE
@@ -156,7 +156,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans         &kp LS(UP_ARROW)    &kp LC(C)  &kp LC(V)  &none
+&trans  &trans  &trans  &trans  &trans                      &trans         &kp LS(UP_ARROW)    &kp LC(C)  &kp LC(V)  &mo 5
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &mkp MB1            &mkp MB3   &mkp MB2   &kp LC(ENTER)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &kp LS(DOWN_ARROW)  &none      &none      &none
 &trans  &trans  &trans  &trans  &none   &trans      &trans  &kp BACKSPACE                                            &kp DELETE
